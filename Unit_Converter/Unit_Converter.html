@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Converter</title>
+	<link rel="stylesheet" type="text/css" href="Unit_Converter_style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Converter</h1>
+		<div class="converter">
+			<h2>Unit Converter</h2>
+			<label for="fromUnit">From:</label>
+			<select id="fromUnit">
+				<option value="meter">Meter</option>
+				<option value="feet">Feet</option>
+				<option value="inch">Inches</option>
+				<option value="cm">Centimeter</option>
+				<option value="kilometer">Kilometer</option>
+				<option value="mile">Mile</option>
+			</select>
+			
+			<input type="text" id="unitInput">
+            <br>
+			<br>
+			<label for="toUnit">To:</label>
+			<select id="toUnit">
+				<option value="meter">Meter</option>
+				<option value="feet">Feet</option>
+				<option value="inch">Inches</option>
+				<option value="cm">Centimeter</option>
+				<option value="kilometer">Kilometer</option>
+				<option value="mile">Mile</option>
+			</select>
+			<button onclick="convertUnit()">Convert</button>
+			<p id="unitOutput"></p>
+		</div>
+		<div class="converter">
+			<h2>Temperature Converter</h2>
+			<label for="fromTemp">From:</label>
+			<select id="fromTemp">
+				<option value="celsius">Celsius</option>
+				<option value="fahrenheit">Fahrenheit</option>
+				<option value="kelvin">Kelvin</option>
+			</select>
+			<input type="text" id="tempInput">
+			<br>
+			<br>
+			<label for="toTemp">To:</label>
+			<select id="toTemp">
+				<option value="celsius">Celsius</option>
+				<option value="fahrenheit">Fahrenheit</option>
+				<option value="kelvin">Kelvin</option>
+			</select>
+			
+			<button onclick="convertTemp()">Convert</button>
+			<p id="tempOutput"></p>
+		</div>
+	</div>
+	<script src="Unit_Converter_script.js"></script>
+</body>
+</html>
